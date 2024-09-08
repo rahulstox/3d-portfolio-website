@@ -1,0 +1,7 @@
+In that portfolio I amde this using React ,Threejs and many more stuffs
+Tools That we used :-
+1.styled components
+2.TypeWriter Effect:-It was used in displaying the Roles in my bio 
+3.Email.js
+4.MUI
+
