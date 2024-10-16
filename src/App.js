@@ -11,6 +11,7 @@ import StartCanvas from "./component/canvas/stars";
 import Projects from "./component/sections/Projects";
 import Contact from "./component/sections/Contact";
 import Footer from "./component/sections/Footer";
+
 // Body
 const Body = styled.div`
 background-color: ${({ theme }) => theme.bg};
@@ -47,6 +48,7 @@ function App() {
         <Body>
           <StartCanvas />
           <div>
+         
             <Hero />
             <Wrapper>
               <Skills />

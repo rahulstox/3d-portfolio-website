@@ -119,14 +119,16 @@ const Skills = () => {
   return (
     <Container id="Skills">
       <Wrapper>
+
         <Title>Skills</Title>
+        
         <Desc
           style={{
             marginBottom: "40px",
           }}
         >
           Here are some of my skills on which I have been working on for the
-          past 1 years.
+          past 2 years.
         </Desc>
 
 
@@ -135,7 +137,9 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <Tilt>
               <Skill key={`skill-${index}`}>
-                <SkillTitle>{skill.title}</SkillTitle>
+                
+                <SkillTitle>
+                  {skill.title}</SkillTitle>
 
                 <SkillList>
                   {skill.skills.map((item, index_x) => (

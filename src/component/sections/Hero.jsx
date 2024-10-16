@@ -49,11 +49,12 @@ const HeroLeftContainer = styled.div`
     order: 2;
     margin-bottom: 30px;
     display: flex;
-    gap: 6px;
+    gap: 8px;
     flex-direction: column;
     align-items: center;
   }
 `;
+// Here i give the order accoprding to the place like in biger window it will stay at a position 1 but in smaller it will be on 2 
 const HeroRightContainer = styled.div`
   width: 100%;
   order: 2;
@@ -74,8 +75,8 @@ const HeroRightContainer = styled.div`
 `;
 
 const Title = styled.div`
-  font-weight: 700;
-  font-size: 50px;
+  font-weight: 700px;
+  font-size: 55px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
 
@@ -178,7 +179,7 @@ const ResumeButton = styled.a`
 `;
 
 const Img = styled.img`
-  border-radius: 50%;
+  border-radius: 25%;
   width: 100%;
   height: 100%;
   max-width: 300px;
@@ -229,7 +230,7 @@ const Hero = () => {
             <HeroLeftContainer>
               <motion.div {...headTextAnimation}>
                 <Title>
-                  Hi, I am <br /> {Bio.name}
+                  Namaste , I am <br /> {Bio.name}
                 </Title>
 
                 <TextLoop>
@@ -254,12 +255,16 @@ const Hero = () => {
 
                 </SubTitle>
               </motion.div>
+
               {/* Resume Button */}
               <ResumeButton href={Bio.resume} target="_blank">
                   Resume
               </ResumeButton>
 
+            
+
             </HeroLeftContainer>
+
             <HeroRightContainer>
               <motion.div {...headContentAnimation}>
                 <Tilt>
