@@ -59,7 +59,6 @@ function App() {
             </Wrapper>
             <Footer /> 
           </div>
-          <Hero />
         </Body>
       </BrowserRouter>
     </ThemeProvider>
